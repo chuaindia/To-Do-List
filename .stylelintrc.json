@@ -10,9 +10,8 @@
           "custom-elements"
         ]
       }
-    ]
-  },
-      "at-rule-no-unknown": [
+    ],
+   "at-rule-no-unknown": [
         true,
         {
           "ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen"]
@@ -28,3 +27,4 @@
         
     "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css", "**/*.js", "**/*.jsx"]
   }
+}
