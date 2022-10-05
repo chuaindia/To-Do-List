@@ -1,9 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome-Books Project
+# TO DO LIST Project
 
-> "Awesome books" is a simple website that displays a list of books and allows user to add and remove books from that list. By building this application,managing data using JavaScript is utilised. In this project ES6 methods are used.
-Modular concept is incorporated and import/export option is used. To create date and time LUXON library is utilised. 
+> This is a project that displays a To Do list of activities. 
 
 
 ## Built With
@@ -16,7 +15,7 @@ JAVASCRIPT
 
 ES6
 
-LUXON
+WEBPACK
 
 
 
