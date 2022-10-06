@@ -1,25 +1,3 @@
-h1 {
-  text-align: center;
-}
-
-section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h2 {
-  margin: 0;
-  padding: 2%;
-  background-color: white;
-}
-
-button {
-  background-color: transparent;
-  border: none;
-}
-
 .container {
   width: 100%;
   max-width: 500px;
