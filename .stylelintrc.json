@@ -3,7 +3,7 @@
     "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
     "rules": {
       
-      "function-calc-no-invalid": "<any value>",      
+      "function-calc-no-invalid": "null",      
       "selector-type-no-unknown": [
         true,
         {
