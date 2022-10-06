@@ -1,6 +1,7 @@
+import _ from 'lodash';
 import './style.css';
 
-const list = [
+const tasks = [
   {
     description: 'Cooking',
     completed: true,
@@ -49,19 +50,20 @@ const list = [
 ];
 
 const myContainer = document.getElementById('to-do-list');
-list.forEach((item) => {
-  myContainer.innerHTML += `
-  <ul class='list-container'>
-  <li class='list-items'>
-  <input type="checkbox" id="check">
-  ${item.description}
-  </li>
-  </ul>
-  `;
+tasks.forEach((item) => {
+	myContainer.innerHTML += `
+	<ul class='list-container'>
+		<li class='list-items'>
+		<input type="checkbox" id="check">
+		${item.description}
+		</li>
+	</ul>
+`;
 });
 
 myContainer.innerHTML += `
 <div class='footer-list'>
-<a href='#' class='footer-a'>Clear all completed</a>
+	<a href='#' class='footer-a'>Clear all completed</a>
 </div>
 `;
+
