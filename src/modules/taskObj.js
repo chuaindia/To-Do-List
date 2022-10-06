@@ -11,3 +11,4 @@ const createObj = (value, indexPosition) => {
   };
   
   export default createObj;
+  

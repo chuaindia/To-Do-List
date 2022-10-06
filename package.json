@@ -4,21 +4,21 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --coverage",
     "build": "webpack",
     "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chuaindia/To-Do-List.git"
+    "url": "git+https://github.com/Javivy/to-do-list.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chuaindia/To-Do-List/issues"
+    "url": "https://github.com/Javivy/to-do-list/issues"
   },
-  "homepage": "https://github.com/chuaindia/To-Do-List#readme",
+  "homepage": "https://github.com/Javivy/to-do-list#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
@@ -27,6 +27,7 @@
     "eslint-plugin-import": "^2.26.0",
     "hint": "^7.1.2",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.1.2",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
@@ -35,5 +36,8 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "@jest/globals": "^29.1.2"
   }
 }
