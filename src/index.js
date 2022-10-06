@@ -1,5 +1,5 @@
 import './style.css';
-import _ from 'lodash';
+
 const list = [
   {
     description: 'Cooking',
@@ -45,7 +45,7 @@ const list = [
     description: 'Prepare Dinner',
     completed: true,
     index: 8,
-  }
+  },
 ];
 
 const myContainer = document.getElementById('to-do-list');
