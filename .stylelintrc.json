@@ -2,8 +2,7 @@
     "extends": ["stylelint-config-standard"],
     "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
     "rules": {
-      "function-calc-no-invalid": "nullish",      
-      "selector-type-no-unknown": [
+       "selector-type-no-unknown": [
         true,
         {
           "ignore":[
