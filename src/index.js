@@ -4,52 +4,52 @@ const list = [
   {
     description: 'Cooking',
     completed: true,
-    index: 0
+    index: 0,
   },
   {
     description: 'Bathing',
     completed: true,
-    index: 1
+    index: 1,
   },
   {
     description: 'Washing clothes',
     completed: true,
-    index: 2
+    index: 2,
   },
   {
     description: 'worshipping God',
     completed: true,
-    index: 3
+    index: 3,
   },
   {
     description: 'Go through the learning materials',
     completed: true,
-    index: 4
+    index: 4,
   },
   {
     description: 'Go for Marketing',
     completed: true,
-    index: 5
+    index: 5,
   },
   {
     description: 'Go for necessary shopping',
     completed: true,
-    index: 6
+    index: 6,
   },
   {
     description: 'Visit neighbours',
     completed: true,
-    index: 7
+    index: 7,
   },
   {
     description: 'Prepare Dinner',
     completed: true,
-    index: 8
+    index: 8,
   }
-]
+];
 
 const myContainer = document.getElementById('to-do-list');
-tasks.forEach((item) => {
+list.forEach((item) => {
   myContainer.innerHTML += `
   <ul class='list-container'>
   <li class='list-items'>
@@ -65,6 +65,3 @@ myContainer.innerHTML += `
 <a href='#' class='footer-a'>Clear all completed</a>
 </div>
 `;
-
-
-
