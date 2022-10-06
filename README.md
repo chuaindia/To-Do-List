@@ -2,7 +2,8 @@
 
 # TO DO LIST Project
 
-> This is a project that displays a To Do list of activities. 
+
+> This is a project that displays a To Do list of activities. All the tests are incorporated here. 
 
 
 ## Built With

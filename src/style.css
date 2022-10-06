@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/** CENTER THE TODO APP */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+/** WRAPPER */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 1px 9px 1px #aaa;
+  width: 50%;
+}
+
+/** STYLE THE TODO APP */
+
+/* LIST HEADER */
+
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 0.6rem 0.5rem;
+}
+
+.reload {
+  cursor: pointer;
+  color: #888;
+}
+
+/* TASK INPUT */
+
+.task-input {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+}
+
+#task {
+  width: 90%;
+  height: 2rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+#task::placeholder {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.fa-turn-down {
+  transform: rotate(90deg);
+  justify-self: flex-end;
+  color: #888;
+  cursor: pointer;
+}
+
+/* TASKS LIST */
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+}
+
+.new-task-input {
+  outline: none;
+  border: none;
+}
+
+.task > label {
+  display: flex;
+  align-items: center;
+}
+
+.task > label > .checked {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #555;
+}
+
+.checkbox-input {
+  margin-right: 1rem;
+  display: inline-block;
+  width: 25px;
+  height: 19px;
+}
+
+.settings {
+  color: #888;
+  cursor: pointer;
+  position: relative;
+}
+
+.task-menu {
+  position: absolute;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 3;
+  transform: scale(0);
+  transform-origin: top right;
+  right: 0;
+  top: -5px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  padding: 5px 0;
+}
+
+.settings:hover .task-menu {
+  transform: scale(1);
+}
+
+.task-menu li {
+  height: 25px;
+  font-size: 16px;
+  padding: 17px 15px;
+  margin-bottom: 2px;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.task-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.task-menu li:hover {
+  background: #f5f5f5;
+}
+
+.task-menu li i {
+  padding-right: 8px;
+}
+
+/** CLEAR ALL COMPLETED BUTTON */
+
+.clear-button {
+  padding: 1rem;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  color: #555;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  text-decoration: underline;
+  color: #000;
+}
