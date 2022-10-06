@@ -1,73 +1,73 @@
-import * as task from './populate.js';
-import * as stat from './status.js';
 import './style.css';
+import _ from 'lodash';
 
-let list = [];
-const listEl = document.querySelector('ul');
 
-function todoList() {
-  if (window.localStorage.getItem('localTasks')) {
-    const localTasks = window.localStorage.getItem('localTasks');
-    list = JSON.parse(localTasks);
-  }
-  document.querySelector('.todo-list').innerHTML = '';
-  list.forEach((item) => {
-    const taskElement = document.createElement('li');
-    taskElement.classList.add('task');
-    if (item.isCompleted) {
-      taskElement.classList.add('completed');
-    }
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.classList.add('task-check');
-    checkbox.addEventListener('click', () => {
-      stat.status(item, list);
-      todoList();
-    });
-    checkbox.checked = item.isCompleted;
-    taskElement.appendChild(checkbox);
-    const taskText = document.createElement('input');
-    taskText.classList = 'task-text';
-    taskText.value = item.description;
-    taskText.addEventListener('change', () => {
-      if (taskText.value.length > 0) {
-        item.description = taskText.value;
-        stat.saveLocal(list);
-      }
-    });
-    taskElement.appendChild(taskText);
+const list = [
+	{
+		description: 'Cooking',
+		completed: true,
+		index: 0
+	},
+	{
+		description: 'Bathing',
+		completed: true,
+		index: 1
+	},
+	{
+		description: 'Washing clothes',
+		completed: true,
+		index: 2
+	},
+	{
+		description: 'worshipping God',
+		completed: true,
+		index: 3
+	},
+	{
+		description: 'Go through the learning materials',
+		completed: true,
+		index: 4
+	},
+	{
+		description: 'Go for Marketing',
+		completed: true,
+		index: 5
+	},
+	{
+		description: 'Go for necessary shopping',
+		completed: true,
+		index: 6
+	},
+	{
+		description: 'Visit neighbours',
+		completed: true,
+		index: 7
+	},
+	{
+		description: 'Prepare Dinner',
+		completed: true,
+		index: 8
+	}
 
-    const dragIcon = document.createElement('button');
-    dragIcon.classList = 'far fa-trash-alt deleteBtn';
-    taskElement.appendChild(dragIcon);
-    taskElement.draggable = 'true';
-    document.querySelector('.todo-list').appendChild(taskElement);
-  });
-}
+]
 
-function removeItem(e) {
-  if (!e.target.classList.contains('deleteBtn')) {
-    return;
-  }
-  const btn = e.target;
-  list.forEach((task) => {
-    if (task.description === btn.parentElement.children[1].value) {
-      list.splice(list.indexOf(task), 1);
-    }
-  });
-  btn.closest('li').remove();
-  task.updateIndex(list);
-  stat.saveLocal(list);
-}
-
-listEl.addEventListener('click', removeItem);
-todoList();
-document.querySelector('#taskForm').addEventListener('submit', (event) => {
-  event.preventDefault();
-  task.add(list);
-  todoList();
+const myContainer = document.getElementById('to-do-list');
+tasks.forEach((item) => {
+	myContainer.innerHTML += `
+	<ul class='list-container'>
+		<li class='list-items'>
+		<input type="checkbox" id="check">
+		${item.description}
+		</li>
+	</ul>
+`;
 });
-document.querySelector('.clearer').addEventListener('click', () => {
-  task.removeDone(list);
-  todoList();
-});
+
+myContainer.innerHTML += `
+<div class='footer-list'>
+	<a href='#' class='footer-a'>Clear all completed</a>
+</div>
+`;
+
+
+
