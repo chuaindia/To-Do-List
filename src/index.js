@@ -66,4 +66,3 @@ myContainer.innerHTML += `
 	<a href='#' class='footer-a'>Clear all completed</a>
 </div>
 `;
-
