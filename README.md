@@ -2,7 +2,7 @@
 
 # TO DO LIST Project
 
-> This is a project that displays a To Do list of activities. 
+> This is a project that displays a To Do list of activities. In this branch add and remove buttons are created. 
 
 
 ## Built With
