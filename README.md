@@ -2,8 +2,8 @@
 
 # TO DO LIST Project
 
-> "To-Do-List" is a tool that helps to organize your day. It simply lists the things that one need to do and can be marked them as complete. This project is built using ES6 and Webpack. JavaScript arrays and objects are utilised to complete the project.
 
+> "To-Do-List" is a tool that helps to organize your day. It simply lists the things that one need to do and can be marked them as complete. This project is built using ES6 and Webpack. JavaScript arrays and objects are utilised to complete the project.
 
 ## Built With
 
