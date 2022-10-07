@@ -3,7 +3,7 @@
 # TO DO LIST Project
 
 
-> This is a project that displays a To Do list of activities. In this branch add and remove buttons are created. 
+> "To-Do-List" is a tool that helps to organize your day. It simply lists the things that one need to do and can be marked them as complete. This project is built using ES6 and Webpack. JavaScript arrays and objects are utilised to complete the project.
 
 
 ## Built With
