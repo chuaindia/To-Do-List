@@ -3,12 +3,12 @@ import './style.css';
 
 const tasks = [
 	{
-		description: 'Go to the GYM',
+		description: 'Morning Walk',
 		completed: true,
 		index: 0
 	},
 	{
-		description: 'Read ES6 book',
+		description: 'Prepare Breakfast',
 		completed: true,
 		index: 1
 	},
@@ -18,32 +18,42 @@ const tasks = [
 		index: 2
 	},
 	{
-		description: 'Wash clothes',
+		description: 'Prepare Lunch',
 		completed: true,
 		index: 3
 	},
 	{
-		description: 'Add New Feature to the app',
+		description: 'Learning Microverse materials',
 		completed: true,
 		index: 4
 	},
 	{
-		description: 'Go camping',
+		description: 'Do the unfinished activities',
 		completed: true,
 		index: 5
 	},
 	{
-		description: 'Go to church',
+		description: 'Shopping',
 		completed: true,
 		index: 6
 	},
 	{
-		description: 'Cook lunch',
+		description: 'Prepare Dinner',
 		completed: true,
 		index: 7
 	},
 	{
-		description: 'Go out',
+		description: 'Evening Walk',
+		completed: true,
+		index: 8
+	},
+	{
+		description: 'Prayer',
+		completed: true,
+		index: 9
+	},
+	{
+		description: 'Reading',
 		completed: true,
 		index: 8
 	}
