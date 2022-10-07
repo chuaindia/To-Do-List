@@ -2,7 +2,6 @@ import './main.css';
 import clearListContainer from './utils/clear-container.js';
 
 const listContainer = document.querySelector('[data-lists]');
-
 const todos = [
   {
     description: 'Cooking lunch ',
@@ -32,16 +31,16 @@ const handleRender = () => {
     const listElement = document.createElement('li');
     listElement.classList.add('todo');
     listElement.innerHTML = `
-      <div class="toggle">
-        <span class="material-icons box">check_box_outline_blank</span>
-        <div class="check-div">
-          <span class="material-icons check">done</span>
-        </div>
-      </div>
-      <div class="view">
-        <p>${todo.description}</p>
-      </div>
-      <span class="material-icons move-icon">more_vert</span>
+    <div class="toggle">
+    <span class="material-icons box">check_box_outline_blank</span>
+    <div class="check-div">
+    <span class="material-icons check">done</span>
+    </div>
+    </div>
+    <div class="view">
+    <p>${todo.description}</p>
+    </div>
+    <span class="material-icons move-icon">more_vert</span>
     `;
     listContainer.appendChild(listElement);
   });
