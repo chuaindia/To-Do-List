@@ -4,41 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/30b7066c1c.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>To Do App</title>
+    <title>To-Do-List</title>
   </head>
   <body>
+    <!-- Todo Header -->
+    <main>
+      <div class="todo-wrapper">
+        <div class="todo-header">
+          <h2>Today's To-do</h2>
+          <span class="material-icons refresh-todos">autorenew</span>
+        </div>
+        <!-- Todo Form -->
+        <div class="add-todo-form">
+          <form data-new-todo-form>
+            <input
+              type="text"
+              placeholder="Add to your list..."
+              id="new-todo"
+              data-new-todo-input
+            />
+            <button
+              type="submit"
+              title="Click this or press enter to submit new todo"
+            >
+              <span class="material-icons enter-arrow"
+                >subdirectory_arrow_left</span
+              >
+            </button>
+          </form>
+        </div>
+        <!-- Todo List -->
+        <ul class="todo-list" data-lists></ul>
 
-    <!--* TO DO LIST  -->
-
-    <div class="wrapper">
-      <div class="list-header">
-        <span>Today's To do</span>
-        <i class="fa-solid fa-arrows-rotate reload"></i>
+        <!-- Clear Todo List -->
+        <div class="clear-todos">
+          <button type="button" data-clear-all>Clear all completed</button>
+        </div>
       </div>
-      <div class="task-input">
-        <input
-          type="text"
-          name="task"
-          id="task"
-          placeholder="Add to your list..."
-        />
-        <i class="fa-solid fa-turn-down"></i>
-      </div>
-      <ul class="tasks-list">
-      </ul>
-      <button type="button" class="clear-button">
-        Clear all completed
-      </button>
-    </div>
-
-    <script src="../dist/index.bundle.js"></script>
+    </main>
   </body>
 </html>
