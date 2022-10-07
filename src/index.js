@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import './main.css';
 import clearListContainer from './utils/clear-container.js';
 

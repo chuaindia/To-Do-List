@@ -4,44 +4,43 @@
     "description": "\"To-do list\" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete",
     "private": true,
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "webpack",
-      "start": "webpack serve --open"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
+        "start": "webpack serve --open"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/chuaindia/To-Do-List.git"
+        "type": "git",
+        "url": "git+https://github.com/chuaindia/To-Do-List.git"
     },
     "keywords": [
-      "chua",
-      "To-do",
-      "List"
+        "chua",
+        "To-do",
+        "List"
     ],
     "author": "Tanusri Ghosh",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/chuaindia/To-Do-List/issues"
+        "url": "https://github.com/chuaindia/To-Do-List/issues"
     },
     "homepage": "https://github.com/chuaindia/To-Do-List#readme",
     "devDependencies": {
-      "babel-eslint": "^10.1.0",
-      "eslint": "^7.32.0",
-      "eslint-config-airbnb-base": "^14.2.1",
-      "eslint-plugin-import": "^2.25.3",
-      "hint": "^6.1.9",
-      "stylelint": "^13.13.1",
-      "stylelint-config-standard": "^21.0.0",
-      "stylelint-csstree-validator": "^1.9.0",
-      "stylelint-scss": "^3.21.0",
-      "css-loader": "^6.5.1",
-      "html-webpack-plugin": "^5.5.0",
-      "style-loader": "^3.3.1",
-      "webpack": "^5.64.4",
-      "webpack-cli": "^4.9.1",
-      "webpack-dev-server": "^4.6.0"
+        "babel-eslint": "^10.1.0",
+        "css-loader": "^6.5.1",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.26.0",
+        "hint": "^2.0.0",
+        "html-webpack-plugin": "^5.5.0",
+        "style-loader": "^3.3.1",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^21.0.0",
+        "stylelint-csstree-validator": "^1.9.0",
+        "stylelint-scss": "^3.21.0",
+        "webpack": "^5.64.4",
+        "webpack-cli": "^4.9.1",
+        "webpack-dev-server": "^4.6.0"
     },
     "dependencies": {
-      "lodash": "^4.17.21"
+        "lodash": "^4.17.21"
     }
-  }
-  
+}
