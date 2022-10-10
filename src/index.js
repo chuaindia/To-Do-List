@@ -1,9 +1,10 @@
+
 /* eslint-disable linebreak-style */
 import './main.css';
 import clearListContainer from './utils/clear-container.js';
 
-const listContainer = document.querySelector('[data-lists]');
-const todos = [
+listContainer = document.querySelector('[data-lists]');
+todos = [
   {
     description: 'Cooking lunch ',
     completed: false,
@@ -26,7 +27,7 @@ const todos = [
   },
 ];
 
-const handleRender = () => {
+handleRender = () => {
   clearListContainer(listContainer);
   todos.forEach((todo) => {
     const listElement = document.createElement('li');
@@ -48,3 +49,6 @@ const handleRender = () => {
 };
 
 handleRender();
+
+
+

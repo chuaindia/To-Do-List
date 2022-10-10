@@ -21,7 +21,14 @@
   "ignorePatterns": [
     "dist/",
     "build/"
-  ]
-}
+  ],
 
-  
+  "import/extensions": [
+      1,
+      {
+        "js": "always",
+        "json": "always"
+      }
+    ]
+  }
+
