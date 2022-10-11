@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet"
     />
-    <title>To-Do-List</title>
+    <title>TO DO LIST</title>
   </head>
   <body>
     <!-- Todo Header -->
@@ -17,16 +17,15 @@
       <div class="todo-wrapper">
         <div class="todo-header">
           <h2>Today's To-do</h2>
-          <span class="material-icons refresh-todos">autorenew</span>
+          <span class="material-icons">autorenew</span>
         </div>
         <!-- Todo Form -->
         <div class="add-todo-form">
-          <form data-new-todo-form>
+          <form>
             <input
               type="text"
               placeholder="Add to your list..."
               id="new-todo"
-              data-new-todo-input
             />
             <button
               type="submit"
@@ -39,11 +38,48 @@
           </form>
         </div>
         <!-- Todo List -->
-        <ul class="todo-list" data-lists></ul>
+        <ul class="todo-list" data-lists>
+          <li class="todo">
+            <div class="toggle">
+              <span class="material-icons box">check_box_outline_blank</span>
+              <div class="check-div">
+                <span class="material-icons check">done</span>
+              </div>
+            </div>
+            <div class="view">
+              <p>Cooking lunch</p>
+            </div>
+            <span class="material-icons move-icon">more_vert</span>
+          </li>
+          <li class="todo">
+            <div class="toggle">
+              <span class="material-icons box">check_box_outline_blank</span>
+              <div class="check-div">
+                <span class="material-icons check">done</span>
+              </div>
+            </div>
+            <div class="view">
+              <p>Join Microverse program</p>
+            </div>
+            <span class="material-icons move-icon">more_vert</span>
+          </li>
+          <li class="todo">
+            <div class="toggle">
+              <span class="material-icons box">check_box_outline_blank</span>
+              <div class="check-div">
+                <span class="material-icons check">done</span>
+              </div>
+            </div>
+            <div class="view">
+              <p>Evening Walk</p>
+            </div>
+            <span class="material-icons move-icon">more_vert</span>
+          </li>
+        </ul>
 
         <!-- Clear Todo List -->
         <div class="clear-todos">
-          <button type="button" data-clear-all>Clear all completed</button>
+          <button type="button">Clear all completed</button>
         </div>
       </div>
     </main>
