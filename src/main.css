@@ -92,13 +92,6 @@ form input {
   padding-left: 5px;
 }
 
-.view input {
-  color: #000;
-  border: none;
-  padding: 18px;
-  width: 100%;
-}
-
 form input:focus {
   outline: none;
 }
@@ -108,6 +101,12 @@ form button[type='submit'] {
   background: none;
 }
 
+.material-icons,
+.enter-arrow {
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
 /* Todo Lists Items */
 .todo-list {
   width: 100%;
@@ -115,27 +114,38 @@ form button[type='submit'] {
   flex-direction: column;
 }
 
+.toggle {
+  display: flex;
+  justify-content: center;
+}
+
 .todo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #d8d8d8;
-  padding: 0 15px;
+  padding: 15px 0;
+  padding: 15px;
+}
+
+.check-div {
+  display: none;
+}
+
+span.check {
+  width: 20px;
+  color: #2a9d8f;
+  display: none;
 }
 
 .view {
   width: 90%;
   margin-left: 15px;
   text-align: left;
-  display: flex;
 }
 
-.view input:focus {
-  outline: none;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: #c0e6fb;
+.view p {
+  color: #000;
 }
 
 .clear-todos {
@@ -160,21 +170,4 @@ form button[type='submit'] {
 
 .todo span.move-icon {
   cursor: all-scroll;
-}
-
-.linethrough {
-  text-decoration: line-through;
-  color: #358fe4 !important;
-}
-
-.delete-todo {
-  background: none;
-  border: none;
-  color: #525151;
-  cursor: pointer;
-  margin: 0 10px;
-}
-
-.delete-todo:hover {
-  color: #df564a;
 }
